@@ -1,0 +1,476 @@
+$primary-color: #51c060;
+$primary-color: #51c060;
+$secondary-color: #249933;
+$accent-color: #007BFF;
+$main-bg-color: #008000;
+$main-border-color: black;
+.mainGeneral {
+    background-image: linear-gradient(to left, $main-bg-color, rgb(29, 95, 20));
+    border: #000000b6 solid transparent;
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.7);
+    border-radius: 3px;
+    max-width: 100rem;
+    margin: 0.5rem;
+    padding: 0.3rem 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logoSimple{
+    width: 13rem;
+    height: 13rem;
+}
+.imagen{
+    width: 30%;
+    height: 30%;
+    margin: 1%;
+    border: black solid 5px;
+    border-radius: 10px;
+}
+.difContenedor{
+    transform: rotate(-2deg);
+    border: #000000b6 solid transparent;
+    background: linear-gradient(to left, #41913e, rgba(41, 95, 34, 0.897));
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+    padding: 0%;
+    margin: 1%;
+    margin-bottom: 2%;
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+}
+.difCategoria {
+    transform: rotate(2deg);
+    background: linear-gradient(to left, rgba(41, 95, 34, 0.897), #41913e);
+    border: #000000b6 solid transparent;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 100%;
+    height: 100%;
+}
+.tituloContenedor{
+    transform: rotate(-1deg);
+    background: linear-gradient(to left, #41913e, rgba(41, 95, 34, 0.897));
+    border: #000000b6 solid transparent;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+    
+    padding: 0% 0%;
+    margin: 2.5rem 3rem;
+    font-size: 3.5rem;
+
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    width: 100%;
+}
+.tituloPags{
+    background: linear-gradient(to left, #4ca849, rgba(56, 128, 46, 0.897));
+    font-size: 90%;
+    text-align: center;
+    color: black;
+    transform: rotate(1deg);
+    width: 100%;
+    padding: 0.5% 2%;
+    margin: 0%;
+
+}
+@media (max-width: 602px) {
+    .tituloPags, .tituloContenedor {
+      font-size: 2.5rem; 
+      padding: 0.25rem;
+    }
+}
+@media (max-width: 518px) {
+    .tituloPags, .tituloContenedor {
+      font-size: 1.9rem; 
+      padding: 0.25rem;
+    }
+}
+.titulo1Producto{
+   
+    background: linear-gradient(to left, #41913e, rgba(41, 95, 34, 0.897));
+    border: #000000b6 solid transparent;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+    transform: rotate(3deg);
+    
+    padding: 0%;
+    margin: 2.5rem 1rem;
+    font-size: 3.5rem;
+
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    width: 95%;
+}
+.tituloProducto {
+    background: linear-gradient(to left, #41913e, rgba(41, 95, 34, 0.897));
+    border: #000000b6 solid transparent;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+    font-size: 3.5rem;
+    text-align: center;
+    color: black;
+    transform: rotate(-3deg);
+
+    width: 100%;
+    padding: 0;
+    margin: 0%;
+}
+@media (max-width: 700px) {
+    .tituloProducto {
+      font-size: 2.5rem; 
+    }
+}
+@media (max-width: 540px) {
+    .tituloProducto {
+      font-size: 1.5rem; 
+    }
+}
+.btn-comprar {
+    margin-top: 0.5rem;
+    padding: 0.10rem 0.65rem;
+    margin-bottom: 1rem;
+    background-color: $accent-color;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    
+    cursor: pointer;
+}
+.productoHijo {
+    width: 17rem;
+    height: 17rem;
+    border: 3px solid black;
+    border-radius: 10px;
+    max-width: 100%;
+    margin: 0.20rem;
+}
+.pieProducto{
+    font-size: 1.8rem;
+    text-align: center;
+    background: linear-gradient(to left, #41913e, rgba(41, 95, 34, 0.897));
+    border: #000000b6 solid transparent;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+    margin: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+
+    display: block;
+    font-weight: bold;
+
+}
+.precioProducto {
+    font-size: 125%;
+    text-align: center;
+    background: linear-gradient(to left, #ffffff, #e6e4e4de);
+    border: 3px solid black;
+    border-radius: 1rem;  
+    
+    margin: 0.5rem;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    font-weight: bold;
+}
+.linkTitulo{
+    width: 320px;
+    background-color: rgb(16, 182, 16);    
+    text-align: center;
+    border: black solid 2px;
+    border-radius: 10px;
+}
+a{
+    color: black;
+    text-decoration: none;   
+    font-weight: bold;
+}
+
+.reparto{
+    background: linear-gradient(to left, #49a746, rgba(37, 107, 28, 0.897));
+    transform: rotate(3deg);
+    border: #000000b6 solid transparent;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+
+    font-size: 1.5rem;
+    padding: 0.75rem 2rem;
+    margin: 2rem;
+}
+.tituReparto{
+    background: linear-gradient(to left, rgba(37, 107, 28, 0.897), #49a746);
+    transform: rotate(-3deg);
+    border: #000000b6 solid transparent;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+
+    margin: 1rem;
+    padding: 0.2rem;
+}
+.listaReparto{
+    transform: rotate(-3deg);
+    padding: 0.5rem 1.5rem;
+}
+
+
+.mapa{
+    display: flex;
+    flex-direction: column;
+}
+.mapaContenedor{
+    background: linear-gradient(to left, rgba(37, 107, 28, 0.897), #49a746);
+    transform: rotate(-3deg);
+    border: #000000b6 solid transparent;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 0%;
+    margin: 2rem 2rem;
+}
+.mapaTitulo{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1.2rem;
+}
+.mapaCaja{
+
+    background: linear-gradient(to left, rgba(37, 107, 28, 0.897), #49a746);
+    transform: rotate(3deg);
+    border: #000000b6 solid transparent;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mapaLink{
+    font-size: 1.8rem;
+    background: linear-gradient(to left, #49a746, rgba(37, 107, 28, 0.897));
+    border: #000000b6 solid transparent;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 0;
+}
+.imgCaja{
+    width: 100%; 
+    height: 100%;
+    background: linear-gradient(to left, rgba(37, 107, 28, 0.897), #49a746);
+    transform: rotate(3deg);
+    border: #000000b6 solid transparent;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imgLocal{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to left, #49a746, rgba(37, 107, 28, 0.897));
+    border: #000000b6 solid transparent;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    justify-items: center;
+    margin: 1rem;
+    padding: 3%;
+}
+.imgNos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #333;
+    border-radius: 1rem;
+    margin: 0 2%;
+}
+@media (max-width: 742px) {
+    .imgLocal {
+      display: flex;
+      flex-direction: column;
+    }
+}
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.formulario{
+    padding: 0% 2% 2% 2%;
+    display: flex;
+    flex-direction: row;
+}
+@media (max-width: 1100px) {
+    .formulario {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 2rem 0.5rem;
+      padding: 0% 6% 6% 6%;
+    }
+
+}
+.tituformulario{  
+    margin: 1rem 0.5rem;
+    text-align: center;
+    font-size: 2rem;
+
+}
+.cajaCont{
+    background: linear-gradient(to left, #49a746, rgba(37, 107, 28, 0.897));    
+    padding: 1rem;
+    padding-top: 0.5rem;
+    text-align: center;
+    font-size: 2rem;
+    transform: rotate(-2deg);
+    border: #000000b6 solid transparent;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 700px) {
+    .cajaCont {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+    }
+
+}
+.contDoc{
+    background: linear-gradient(to left, rgba(37, 107, 28, 0.897), #49a746);
+    margin: 0.25rem 0.75rem;
+
+    padding: 2%;
+    border: #000000b6 solid transparent;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+}
+.aquiTitu{
+    font-size: 1.5rem;
+    padding: 0.25rem 2rem;
+}
+.btnAqui{
+    margin-top: 0;
+    padding: 0.10rem 0.65rem;
+    margin-bottom: 1rem;
+    background-color: $accent-color;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; 
+}
+.contWhat{
+    background: linear-gradient(to left, rgba(37, 107, 28, 0.897), #49a746);
+    margin: 0.25rem 0.75rem;
+    padding: 2%;
+    border: #000000b6 solid transparent;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+.whatTitu{
+    font-size: 1.5rem;
+    padding: 0.25rem;
+}
+.linkWpp{
+    font-size: 1.3rem;
+    width: 90%;
+    padding: 0.40rem 0.2rem;
+    margin: 2.5%;
+    background: linear-gradient(to left, #49a746, rgba(37, 107, 28, 0.897));
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.imgWpp{
+    width: 10%;
+}
+.listaDuda{
+    list-style: none; 
+    padding: 0%;
+    display: flex;
+    flex-direction: row;
+}
+.contenedorRedes{
+    background: linear-gradient(to left, #49a746, rgba(37, 107, 28, 0.897)); 
+    transform: rotate(2deg);
+    border: #000000b6 solid transparent;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 1rem; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.contenedorDudas{
+    background: linear-gradient(to left, #49a746, rgba(37, 107, 28, 0.897)); 
+    transform: rotate(2deg);
+    border: #000000b6 solid transparent;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 1rem; 
+}
+@media (max-width: 561px) {
+    .contenedorDudas, .contenedorRedes {
+      
+      margin: 0.5rem 0rem;
+    }
+
+}
+.cajaRedes{
+    background: linear-gradient(to left, #49a746, rgba(37, 107, 28, 0.897));    
+    padding: 1rem;
+    padding-top: 0.5rem;
+    text-align: center;
+    font-size: 2rem;
+    transform: rotate(-2deg);
+    border: #000000b6 solid transparent;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    height: 100%;
+}
+.listaRedes{
+    list-style: none; 
+    padding: 0%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.logoRed{
+    width: 7rem;
+    height: 7rem;
+    border: black 4px solid;
+    border-radius: 40px;
+    margin: 1.4rem 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+.contPags{
+    flex: none;
+    font-size: 4rem;
+    background: linear-gradient(to left, rgba(56, 128, 46, 0.897), #4ca849);
+    border: 3px solid black;
+    padding: 1%;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0.5rem 0 1rem;
+    color: black;
+}
+.problema{
+    display: flex;
+    flex-direction: row;
+}
