@@ -67,7 +67,7 @@ $main-border-color: black;
     border-radius: 2px;
     
     padding: 0% 0%;
-    margin: 2.5rem 3rem;
+    margin: 2.5rem 2rem;
     font-size: 3.5rem;
 
     display: flex;
@@ -89,13 +89,12 @@ $main-border-color: black;
 @media (max-width: 602px) {
     .tituloPags, .tituloContenedor {
       font-size: 2.5rem; 
-      padding: 0.25rem;
+      
     }
 }
 @media (max-width: 518px) {
     .tituloPags, .tituloContenedor {
-      font-size: 1.9rem; 
-      padding: 0.25rem;
+      font-size: 1.7rem; 
     }
 }
 .titulo1Producto{
@@ -309,9 +308,8 @@ a{
     max-width: 100%;
     height: auto;
 }
-
-
 .formulario{
+    width: 100%;
     padding: 0% 2% 2% 2%;
     display: flex;
     flex-direction: row;
@@ -326,10 +324,17 @@ a{
     }
 
 }
-.tituformulario{  
-    margin: 1rem 0.5rem;
+.tituFormulario{  
+    margin: 1rem;
     text-align: center;
     font-size: 2rem;
+
+}
+@media (max-width: 480px) {
+    .tituFormulario {
+      font-size: 1.6rem;
+      text-overflow: ellipsis;
+    }
 
 }
 .cajaCont{
@@ -346,7 +351,7 @@ a{
     .cajaCont {
       display: flex;
       flex-direction: column;
-      align-items: center;
+      
 
     }
 
@@ -400,7 +405,7 @@ a{
     cursor: pointer;
 }
 .imgWpp{
-    width: 10%;
+    width: 2rem;
 }
 .listaDuda{
     list-style: none; 
@@ -408,15 +413,23 @@ a{
     display: flex;
     flex-direction: row;
 }
+@media (max-width: 471px) {
+    .listaDuda {
+        display: flex;
+        flex-direction: column;
+        
+        margin: 0.1rem;
+        padding: 0.1rem;
+    }
+
+}
 .contenedorRedes{
     background: linear-gradient(to left, #49a746, rgba(37, 107, 28, 0.897)); 
     transform: rotate(2deg);
     border: #000000b6 solid transparent;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     margin: 1rem; 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    padding: auto;
 }
 .contenedorDudas{
     background: linear-gradient(to left, #49a746, rgba(37, 107, 28, 0.897)); 
@@ -424,24 +437,23 @@ a{
     border: #000000b6 solid transparent;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     margin: 1rem; 
+
 }
 @media (max-width: 561px) {
     .contenedorDudas, .contenedorRedes {
-      
       margin: 0.5rem 0rem;
     }
 
 }
 .cajaRedes{
     background: linear-gradient(to left, #49a746, rgba(37, 107, 28, 0.897));    
-    padding: 1rem;
+    padding: 0.75rem;
     padding-top: 0.5rem;
     text-align: center;
     font-size: 2rem;
     transform: rotate(-2deg);
     border: #000000b6 solid transparent;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    height: 100%;
 }
 .listaRedes{
     list-style: none; 
@@ -450,6 +462,16 @@ a{
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+@media (max-width: 471px) {
+    .listaRedes {
+        display: flex;
+        flex-direction: column;
+        
+        margin: 0.1rem;
+        padding: 0.1rem;
+    }
+
 }
 .logoRed{
     width: 7rem;

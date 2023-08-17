@@ -33,6 +33,11 @@ body {
   border-radius: 4px;
 }
 
+@media (max-width: 400px) {
+  .logoEtto {
+    width: 16.5rem;
+  }
+}
 .itemNav {
   font-size: 1.5rem;
   color: black;
@@ -127,7 +132,7 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border-radius: 2px;
   padding: 0% 0%;
-  margin: 2.5rem 3rem;
+  margin: 2.5rem 2rem;
   font-size: 3.5rem;
   display: flex;
   align-items: center;
@@ -149,13 +154,11 @@ body {
 @media (max-width: 602px) {
   .tituloPags, .tituloContenedor {
     font-size: 2.5rem;
-    padding: 0.25rem;
   }
 }
 @media (max-width: 518px) {
   .tituloPags, .tituloContenedor {
-    font-size: 1.9rem;
-    padding: 0.25rem;
+    font-size: 1.7rem;
   }
 }
 .titulo1Producto {
@@ -376,6 +379,7 @@ a {
 }
 
 .formulario {
+  width: 100%;
   padding: 0% 2% 2% 2%;
   display: flex;
   flex-direction: row;
@@ -390,12 +394,18 @@ a {
     padding: 0% 6% 6% 6%;
   }
 }
-.tituformulario {
-  margin: 1rem 0.5rem;
+.tituFormulario {
+  margin: 1rem;
   text-align: center;
   font-size: 2rem;
 }
 
+@media (max-width: 480px) {
+  .tituFormulario {
+    font-size: 1.6rem;
+    text-overflow: ellipsis;
+  }
+}
 .cajaCont {
   background: linear-gradient(to left, #49a746, rgba(37, 107, 28, 0.897));
   padding: 1rem;
@@ -411,7 +421,6 @@ a {
   .cajaCont {
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
 }
 .contDoc {
@@ -466,7 +475,7 @@ a {
 }
 
 .imgWpp {
-  width: 10%;
+  width: 2rem;
 }
 
 .listaDuda {
@@ -476,15 +485,21 @@ a {
   flex-direction: row;
 }
 
+@media (max-width: 471px) {
+  .listaDuda {
+    display: flex;
+    flex-direction: column;
+    margin: 0.1rem;
+    padding: 0.1rem;
+  }
+}
 .contenedorRedes {
   background: linear-gradient(to left, #49a746, rgba(37, 107, 28, 0.897));
   transform: rotate(2deg);
   border: rgba(0, 0, 0, 0.7137254902) solid transparent;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   margin: 1rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  padding: auto;
 }
 
 .contenedorDudas {
@@ -502,14 +517,13 @@ a {
 }
 .cajaRedes {
   background: linear-gradient(to left, #49a746, rgba(37, 107, 28, 0.897));
-  padding: 1rem;
+  padding: 0.75rem;
   padding-top: 0.5rem;
   text-align: center;
   font-size: 2rem;
   transform: rotate(-2deg);
   border: rgba(0, 0, 0, 0.7137254902) solid transparent;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  height: 100%;
 }
 
 .listaRedes {
@@ -521,6 +535,14 @@ a {
   align-items: center;
 }
 
+@media (max-width: 471px) {
+  .listaRedes {
+    display: flex;
+    flex-direction: column;
+    margin: 0.1rem;
+    padding: 0.1rem;
+  }
+}
 .logoRed {
   width: 7rem;
   height: 7rem;
